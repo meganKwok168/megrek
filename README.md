@@ -1,2 +1,21 @@
-# megrek
-megan kwok, derek yang
+### REGEX EQUATIONS
+
+## ((?P<month>\d{1,2}))+(\/|-)+(?P<day>\d{1,2})+(\/|-)((?P<year>\d{4}|\d{2}))+(\b)
+(m)m-(d)d-(yy)yy 
+(m)m/(d)d/(yy)yy 
+
+
+## (\b)+(?<!\/|-)+((?<month>\d{1,2}))+(\/|-)((?<year>\d{4}))+(\b)
+(m)m/(yy)yy
+
+## (?<day>\d{2})+( )+(?<month>January|Jan|February|Feb|Mar|March|Apr|April|May|Jun|June|July|Jul|Aug|August|Sep|September|Oct|October|Nov|November|Dec|December)+( )+(?<year>\d{4}|\d{2})+(\b)
+dd mon yyyy
+dd month yyyy
+
+## (?<month>January|Jan|February|Feb|Mar|March|Apr|April|May|Jun|June|July|Jul|Aug|August|Sep|September|Oct|October|Nov|November|Dec|December)+(.|)+ (?<day>\d{2})+(\s|,\s)+(?<year>\d{4}|\d{2})+(\b)
+mon dd, year
+month dd, yyyy
+
+## (?<month>January|Jan|February|Feb|Mar|March|Apr|April|May|Jun|June|July|Jul|Aug|August|Sep|September|Oct|October|Nov|November|Dec|December)+( )((?<year>\d{4}))+(\b)
+mon year
+month year
